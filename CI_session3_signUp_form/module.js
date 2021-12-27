@@ -24,14 +24,28 @@ class SignIn {
        this.$inputPassword.classList.add ("mt-3");
        this.$inputPassword.type = "password";
 
-       this.$buttonSignIn = document.createElement("button");
-       this.$buttonSignIn.innerText = "Sign In";
-       this.$buttonSignIn.classList.add("btn", "btn-success", "mt-3")
-       
+
+       this.$buttonSignIn = document.createElement("input");
+       this.$buttonSignIn.classList.add("btn", "btn-success", "mt-3");
+       this.$buttonSignIn.addEventListener("click", this.handleSubmit);
+       this.$buttonSignIn.value = "Sign In";
+       }
+
+       handleSubmit = () => {
+           console.log("SignIN");
+           this.$inputUserName.value = "";
+           this.$inputPassword.value = "";
+
        }
        render () {
            this.$container.append(this.$title, this.$inputUserName, this.$inputPassword, this.$inputPassword, this.$buttonSignIn )
            return this.$container;
        }
 }
+
+
+
+
+
 export default SignIn;
+
