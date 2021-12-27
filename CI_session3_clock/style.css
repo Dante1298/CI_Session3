@@ -1,0 +1,36 @@
+*{
+    font-family: "Roboto", sans-serif !important;
+}
+body {
+    background-color: #cacaca;
+}
+
+.btnStart {
+    display: block;
+    margin: 0px 10px;
+    border: 1px solid #0dcaf0;
+    transition: 0.15s;
+}
+.btnStart:hover {
+    color: #0dcaf0 !important;
+    background: #fff !important;
+    transition: 0.2s;
+}
+
+.btnStop {
+    display: block;
+    margin: 0 10px;
+    border: 1px solid #dc3545;
+    transition: 0.15s;
+}
+.btnStop:hover {
+    color: #dc3545 !important;
+    background: #fff !important;
+    transition: 0.2s;
+}
+
+.label {
+    line-height: 38px;
+    font-size: 20px;
+
+}
