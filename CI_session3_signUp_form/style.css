@@ -4,19 +4,22 @@
 img {
     height: 100vh;
 }
-#app {
+#main {
     display: flex;
 }
-
-.button-outline {
-    float: right;
+#container {
     margin-top: 200px;
-    margin-right: 240px;
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 .btn-outline-primary, .btn-outline-success {
-    width: 140px;
+    width: 120px;
     height: 68px;
     margin-left: 10px;
-    font-size: 1.6rem !important;
-    margin-bottom: 2px;
+    font-size: 1.4rem !important;
 }
